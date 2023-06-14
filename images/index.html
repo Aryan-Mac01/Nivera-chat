@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <title>Nivera-fy</title>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li class="brand"><img src="logo2.png" alt="Nivera"></li>
+        </ul>
+        
+        <a href="main.html">Home</a>
+        <a href="bot.html">Nivera Bot</a>
+        <div class="dropdown">
+          <button class="dropbtn">About 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <p>Nivera-fy is your own personal Music Player <br> which can play Music according to your mood <br> and especially those songs which are suggested <br> by Nivera Bot</p>
+            <p>Made By:</p>
+            <a href="https://www.instagram.com/_msoham/">Soham Mishra</a>
+            <a href="https://www.instagram.com/_anurag_0110/">Anurag Gupta</a>
+            <a href="https://www.instagram.com/aryan_mishra30/">Aryan Mishra</a>
+          </div>
+        </div> 
+      </div>
+    
+
+    <div class="container">
+        
+        <div class="songList"></div>
+        <h1 class="head">Nivera-fy - Music according to your mood</h1>
+        <div class="songItemContainer">
+            <div class="songItem">
+                <img alt="1">
+                <span class="songName">Positions</span>
+                <span class="songListPlay"><span class="timeStamp">2:52 <i id="0" class="fa-solid songItemPlay fa-play"></i></span></span>
+            </div>
+
+            <div class="songItem">
+                <img alt="1">
+                <span class="songName">Perfect</span>
+                <span class="songListPlay"><span class="timeStamp">4:23 <i id="1" class="fa-solid songItemPlay fa-play"></i></span></span>
+            </div>
+
+            <div class="songItem">
+                <img alt="1">
+                <span class="songName">Blinding Lights</span>
+                <span class="songListPlay"><span class="timeStamp">3:21 <i id="2" class="fa-solid songItemPlay fa-play"></i></span></span>
+            </div>
+
+            <div class="songItem">
+                <img alt="1">
+                <span class="songName">Steer Way to Heaven</span>
+                <span class="songListPlay"><span class="timeStamp">8:02 <i id="3" class="fa-solid songItemPlay fa-play"></i></span></span>
+            </div>
+
+            <div class="songItem">
+                <img alt="1">
+                <span class="songName">Sweet Child Oh' Mine</span>
+                <span class="songListPlay"><span class="timeStamp">5:55 <i id="4" class="fa-solid songItemPlay fa-play"></i></span></span>
+            </div>
+
+            <!--<div class="songItem">
+                <img alt="1">
+                <span class="songName">Positions</span>
+                <span class="songListPlay"><span class="timeStamp">2:52 <i id="5" class="fa-solid songItemPlay fa-play main1"></i></span></span>
+            </div>-->
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <i class="fa-3x fa-solid fa-backward back" id="previous"></i>
+            <i class="fa-3x  fa-solid fa-play main" id="masterPlay"></i>
+            <i class="fa-3x fa-solid fa-forward" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <img src="lines.gif" width="42px" alt="" id="gif"> <span id="masterSongName"></span>Positions
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/6be075e143.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
